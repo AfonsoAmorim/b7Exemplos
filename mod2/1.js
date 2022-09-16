@@ -31,3 +31,8 @@ function verde() {
     limpar();
     document.getElementById("tituloCor").classList.add("verde");
 }
+
+function mostrarTelefone(){
+    document.getElementById("telefone").style.display = "block";
+}
+
