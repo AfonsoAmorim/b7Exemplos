@@ -18,4 +18,14 @@ console.log("Primeira desconstrução: " + nome,sobrenome, idade);
 let{nome:novoNomeVariavel, sobrenome:novoSobrenomeVariavel} = pessoa;
 console.log("Segunda desconstrução: " + novoNomeVariavel, novoSobrenomeVariavel); // mudando nomes da variável
 
+let {social:{instagram}} = pessoa;
+console.log("Dados dentro de outros objetos: " +  instagram);
+
+//desconstruindo por função 
+
+function pegarNome({nome, sobrenome}) {
+    return `${nome} ${sobrenome}`
+}
+console.log("Desconstruindo por function : " + pegarNome(pessoa));
+
 
